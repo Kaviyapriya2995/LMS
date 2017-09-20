@@ -226,10 +226,7 @@ public class BookLoanController extends HttpServlet {
                         	borrower_id = dbConnection.resultSet.getString("borrower_id");
                         	uname_db=dbConnection.resultSet.getString("username");
                         }
-                        else
-                        {
-                        	return;
-                        }
+                       
                         if(uname_db.equals(uname))
                         {
                         	System.out.println("success");
